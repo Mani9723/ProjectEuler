@@ -40,7 +40,7 @@ public class MultiplesOThreeFive
 	{
 		this.max = max;
 		for(int i = 1; i<this.max;i++){
-			if(i%3 ==0 || i%5==0){
+			if(i%THREE ==0 || i%FIVE==0){
 				storeArrayList(i);
 				sum += i;
 			}
