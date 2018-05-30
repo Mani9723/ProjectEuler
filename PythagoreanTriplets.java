@@ -4,8 +4,8 @@
  * PROBLEM 9:
  *A Pythagorean triplet is a set of three natural numbers, a < b < c, for which,
 
- a2 + b2 = c2
- For example, 32 + 42 = 9 + 16 = 25 = 52.
+ a^2 + b^2 = c^2
+ For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
 
  There exists exactly one Pythagorean triplet for which a + b + c = 1000.
  Find the product abc.
@@ -21,17 +21,24 @@ public class PythagoreanTriplets
 {
 	public static void main(String[] args)
 	{
-		int m=1;
-		int finalSum = 1000;
+		/*
+		a = m^2 - n^2
+		b = 2mn
+		c = m^2 + n^2
 
-		for(int i =0;i<10;i++){
-			int a = 2*m;
-			int b = (m*m) -1;
-			int c = (m*m)+1;
-			System.out.printf("%d\n%d\n%d\n\n",a,b,c);
-			m++;
+		for all m, n E Z | m > n
+		 */
+		int a,b,c;
+		for(int n = 3; n < 1000; n++){
+			for(int m = n+1 ; m<1000;m++){
+				a = (m*m) - (n*n);
+				b = 2*m*n;
+				c = (m*m) + (n*n);
+				if(a+b+c == 1000) {
+					System.out.println(a * b * c);
+					break;
+				}
+			}
 		}
-
-
 	}
 }
