@@ -55,19 +55,4 @@ public class NameScores
 		}
 		return names;
 	}
-//	private static LinkedHashMap<Character,Integer> tableCharValues()
-//	{
-//		LinkedHashMap<Character,Integer> charTable = new LinkedHashMap<>();
-//		for(int i = 0; i< 26; i++)
-//		{
-//			charTable.put('a',1);charTable.put('b',2);charTable.put('c',3);charTable.put('d',4);
-//			charTable.put('e',5);charTable.put('f',6);charTable.put('g',7);charTable.put('h',8);
-//			charTable.put('i',8);charTable.put('j',9);charTable.put('k',10);charTable.put('l',12);
-//			charTable.put('m',13);charTable.put('n',14);charTable.put('o',15);charTable.put('p',16);
-//			charTable.put('q',17);charTable.put('r',18);charTable.put('s',19);charTable.put('t',20);
-//			charTable.put('u',21);charTable.put('v',22);charTable.put('w',23);charTable.put('x',24);
-//			charTable.put('y',25);charTable.put('z',26);
-//		}
-//		return charTable;
-//	}
 }
