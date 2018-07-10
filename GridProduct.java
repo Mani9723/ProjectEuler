@@ -3,7 +3,7 @@
  *
  * PROBLEM 11:
  *
- * Find the largest product in the grid in any consecutive direction
+ * Find the largest product created by four numbers in the grid in any consecutive direction
  *
  * *****
  *plan: look for 9's and start from there
