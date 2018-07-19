@@ -30,10 +30,12 @@ public class CollatzConjecture
 		for(int i = 13;i<10000000.;i+=2) {
 			//System.out.println(i);
 			collatzConjecture(i);
-			if(largestCount<count) {
-				largestCount = count;
-				specialNum = i;
-			}
+// 			if(largestCount<count) {
+// 				largestCount = count;
+// 				specialNum = i;
+// 			}
+			largestCount = Math.max(largestCount,count);
+			if(largestCount<count) specialNum = 1;
 			resetCount();
 		}
 	//	Collections.sort(chain);
