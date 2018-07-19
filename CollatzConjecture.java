@@ -48,10 +48,12 @@ public class CollatzConjecture
 		++count;
 		if(testValue == 1 || testValue ==0)
 			return count;
-		else if(testValue%2==0)
-			return collatzConjecture(testValue /=2);
-		else
-			return collatzConjecture(testValue*3 + 1);
+		return testValue % 2 == 0 ? collatzConjecture(testValue /= 2) 
+			: collatzConjecture(testValue*3 + 1);
+// 		else if(testValue%2==0)
+// 			return collatzConjecture(testValue /=2);
+// 		else
+// 			return collatzConjecture(testValue*3 + 1);
 	}
 	private static void resetCount()
 	{
