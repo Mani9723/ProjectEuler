@@ -2,6 +2,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+
+/**
+*In any given triangular formation of numbers with n rows, 
+*find the path that produces the maximum sum from top to bottom.
+*/
 public class MaximumPathSum
 {
 
